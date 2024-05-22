@@ -1,0 +1,161 @@
+/* Estilo base */
+@font-face {    
+    font-family: "myFirstFont";
+    src: url("../../assets/fonts/Poppins-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "mySecondFont";
+    src: url("../../assets/fonts/Poppins-ExtraBoldItalic.ttf");
+}
+
+@font-face {
+    font-family: "myThirdFont";
+    src: url("../../assets/fonts/Poppins-Italic.ttf");
+}
+
+@font-face {    
+    font-family: "myFourthFont";
+    src: url("../../assets/fonts/Poppins-Bold.ttf");
+}
+
+@font-face {    
+    font-family: "myFifthFont";
+    src: url("../../assets/fonts/212-Warmheart-Sans-PERSONAL-USE.ttf");
+}
+
+input {
+    color: #b6b6b6;
+    font-family: "myFirstFont";
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #eeeeee;
+    background-image: url("../../assets/images/background_image.png");
+    background-size:100% 100%;
+}
+
+.QuadradoBrancoCentral {
+    width: 600px;
+    height: 500px;
+    background-color: #f0f0f0;
+    margin: auto;
+    border-radius: 25px 25px 120px 25px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.attribution {
+    text-align: center;
+    padding: 10px;
+    background-color: transparent;
+    color: black;
+}
+
+.desceMensagemErro{
+    border-color: transparent;
+    margin-top: 1px;
+    letter-spacing: 0px;
+}
+
+.LinhaCampos {
+    display: flex;
+    padding-top: 40px;
+    padding-left: 40px;
+    height: 100px;    
+    font-family: "myFourthFont";
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.campoTexto {
+    width: 120px;
+    height: 40px;
+    margin-right: 25px;
+    border-radius: 5px;
+    border: 1px solid #eeeeee;
+}
+
+.campoTexto.invalid {
+    border: 2px solid red;
+}
+
+#idFonte {
+    letter-spacing: 2px;
+    font-family: "myFirstFont";
+    font-size: 10px;
+}
+
+::placeholder {
+    color: #b6b6b6;
+    font-family: "myFirstFont";
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+.LinhaCalculo {
+    display: flex;
+    margin-right: 40px;
+}
+
+.LinhaReta {
+    height: 1px;
+    width: 80%;
+    margin-top: 35px;
+    border-color: transparent;
+    background-color: #dadada;
+}
+
+.BotaoCalculo {
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    background-color: #608FA2;
+    border-color: transparent;
+}
+
+.ResultadosCalculo {
+    padding-left: 40px;
+    font-family: "mySecondFont";
+    font-size: 60px;
+}
+
+#anosValor {
+    color: #608FA2;
+}
+
+#mesesValor {
+    color: #608FA2;
+}
+
+#diasValor {
+    color: #608FA2;
+}
+
+.testeAno {
+    padding-left: 15%;
+}
+
+.erro {
+    color: red;
+    font-size: 12px;
+    font-family: "myThirdFont";
+}
+
+.label-invalid {
+    color: red;
+    font-family: "myFirstFont";
+}
+
+.attribution{    
+    font-family: "myFifthFont";
+    font-size: 20px;
+}

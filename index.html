@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <title>App de cálculo de idade</title>
+  <script type="text/javascript" src="./assets/scripts/ageCalculator.js"></script>
+</head>
+
+<body>
+  <div class="QuadradoBrancoCentral">
+    <div class="LinhaCampos">
+      <div class="Dia">
+        <label id="labelDia" for="textoDia">DAY</label>
+        <br>
+        <input type="text" class="campoTexto" id="textoDia" name="dia" placeholder="DD">
+        <p class="desceMensagemErro"><span id="erroDia" class="erro"></span></p>
+        <br>
+      </div>
+      <div class="Mes">
+        <label id="labelMes" for="textoMes">MONTH</label>
+        <br>
+        <input type="text" class="campoTexto" id="textoMes" name="mes" placeholder="MM">
+        <p class="desceMensagemErro"><span id="erroMes" class="erro"></span></p>
+        <br>
+      </div>
+      <div class="Ano">
+        <label id="labelAno" for="textoAno">YEAR</label>
+        <br>
+        <input type="text" class="campoTexto" id="textoAno" name="ano" placeholder="YYYY">
+        <p class="desceMensagemErro"><span id="erroAno" class="erro"></span></p>
+        <br>
+      </div>
+    </div>
+    <div class="LinhaCalculo">
+      <hr class="LinhaReta" align="right" />
+      <button type="button" class="BotaoCalculo" onclick="calcularIdade()">
+        <img src="./assets/images/icon-arrow.svg" alt="Calcular Idade">
+      </button>
+    </div>
+    <div class="ResultadosCalculo">
+      <div id="idadeAnos">
+        <span id="anosValor">--</span> years
+      </div>
+      <div id="idadeMeses">
+          <span id="mesesValor">--</span> months
+      </div>
+      <div id="idadeDias">
+          <span id="diasValor">--</span> days
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/VRondini" target="_blank">Vinicius Rondini Ferreira</a>.
+  </div>
+</body>
+
+</html>
